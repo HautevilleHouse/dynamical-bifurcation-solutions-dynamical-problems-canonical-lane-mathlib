@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DynamicalBifurcationSolutionsDynamicalProblemsCanonicalLaneLean.HopfBifurcationSolution
+import HautevilleHouse.DynamicalBifurcationSolutionsDynamicalProblemsCanonicalLaneLean.SaddleNodeBifurcationSolution
+
+namespace HautevilleHouse
+namespace DynamicalBifurcationSolutionsDynamicalProblemsCanonicalLaneLean
+
+structure BifurcationFiniteExtinctionPackage where
+  finiteBifurcationSet : Prop
+  allBifurcationsClassified : Prop
+  globalDynamicsDetermined : Prop
+
+structure BifurcationFiniteExtinctionEvidence (B : BifurcationFiniteExtinctionPackage) where
+  finiteBifurcationSetClosed : B.finiteBifurcationSet
+  allBifurcationsClassifiedClosed : B.allBifurcationsClassified
+  globalDynamicsDeterminedClosed : B.globalDynamicsDetermined
+
+end DynamicalBifurcationSolutionsDynamicalProblemsCanonicalLaneLean
+end HautevilleHouse
